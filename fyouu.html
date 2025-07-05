@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> for yosi </title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background: url('https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExNnM1dmJlNWZqZmtybWFwaHFmZDg0ZHo3aTZ0YWN0Ync5czE3M3dpOCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xlkpFIv7pd1DsxNlS3/giphy.gif') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+      overflow: hidden;
+    }
+    .slide {
+      display: none;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 80%;
+      max-width: 600px;
+      padding: 20px;
+      background-color: rgba(112, 39, 176, 0.7);
+      border: 2px solid white;
+      border-radius: 10px;
+      text-align: center;
+      animation: fadeIn 1s ease forwards;
+    }
+    .visible {
+      display: block;
+    }
+    h1 {
+      font-weight: bold;
+      font-size: 2em;
+    }
+    p {
+      font-size: 1em;
+      margin-top: 10px;
+    }
+    .btn {
+      background-color: white;
+      color: black;
+      padding: 8px 16px;
+      border: none;
+      border-radius: 5px;
+      margin-top: 15px;
+      cursor: pointer;
+      font-family: 'Poppins', sans-serif;
+    }
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+    img.gif {
+      width: 100px;
+      margin-top: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Slide 1 -->
+  <div class="slide visible" id="slide1">
+    <h1>Haii Yosia</h1>
+    <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExMGgwcXVpMDhwczBhdTU4MXN1c2RpaWh5YnoyMDRuamVjOXM3eng3NSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/TI12KtYsnjxSb7KaNc/giphy.gif" alt="Gif pemalu" class="gif"><br>
+    <p>Sebelumee aku mohon maaf banget ya… aku mau jujur soal sesuatu, mungkin ga sepantese aku ngomong gini.. selama ini aku punya rasa suka ke kamu, aku ra bermaksud nembak kok, aku gur pingin mengungkapkannya saja🙏🏼😊</p>
+    <button class="btn" onclick="nextSlide(1)">Lanjut</button>
+  </div>
+
+  <!-- Slide 2 -->
+  <div class="slide" id="slide2">
+    <p>jadi.. sejak semester 1 dulu, waktu kita sering kerkom bareng… aku udah mulai ngerasain hal ini. jane soko awal aku wis berusaha banget buat ngilangke rasa iki… karena niatku cuma pengen kamu jadi teman kelas, main dan partner tugas… kuwi tok😔. Tapi...</p>
+    <button class="btn" onclick="nextSlide(2)">Lanjut</button>
+  </div>
+
+  <!-- Slide 3 -->
+  <div class="slide" id="slide3">
+    <p>Tapi piye neh toh, soyo tak pendem soyo mengganggu pikiranku 🙏🏼😭<br>Makane… walaupun lewat program tak jelas ini, saiki aku milih ngomong langsung ke kamu, supaya aku bisa lega..</p>
+    <button class="btn" onclick="nextSlide(3)">Lanjut</button>
+  </div>
+
+  <!-- Slide 4 -->
+  <div class="slide" id="slide4">
+    <p>Aku ngerti kok… kita punya banyak perbedaan… dan aku paham itu… Tapi tetep wae, perasaan ini gak bisa aku pungkiri begitu aja. Mugi bar aku ngirim ini ke kamu, semoga kita nggak jadi asing yaa, aku tetep pengen jalin pertemanan yang baik sama kamu… Tolong ya 🙏🥺…</p>
+    <button class="btn" onclick="nextSlide(4)">Lanjut</button>
+  </div>
+
+  <!-- Slide 5 -->
+  <div class="slide" id="slide5">
+    <p>Dan aku juga pengen bilang makasih banyak…<br>Terima kasih karena tanpa kamu sadari, kamu udah jadi motivasi besar buat aku selama hampir 1 tahun ini… buat lebih semangat kuliah… buat pengen berubah jadi pribadi yang lebih baik lagi. Puji syukur nilaiku lebih baik sisan timbang sebelumee, hehe ✨🙏</p>
+    <button class="btn" onclick="nextSlide(5)">Terakhir</button>
+  </div>
+
+  <!-- Slide 6 -->
+  <div class="slide" id="slide6">
+    <h1>TERIMAKASIH YOSIA 🙏</h1>
+    <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExNWRybTJ3cXhkM2lwNHViemJ3aWQ0d2RmYWcwZzU3aTI2bHdodmFtaCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3qIzgpZiysvSBaHsNf/giphy.gif" alt="Gif penutup" class="gif">
+    <p>Sekali lagi… aku mohon maaf sebesar-besarnya… dan makasih banyak… udah mau dengerin perasaan yang selama ini aku simpen sendiri dan membaca sampai habis, padahal ya ga penting banget buat kamu… 😊🙏🏼</p>
+    <button class="btn" onclick="nextSlide(6)">makasih ya</button>
+  </div>
+
+  <!-- Slide last -->
+  <div class="slide" id="slide7">
+    <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExNDhjNmlqbnN6YXBwODR5MjhzZHN4ZGpscHB5czlicXpraWl4Znh3diZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/GL9NtQOUQ4ox3osliL/giphy.gif" alt="Gif penutup" class="gif">
+    <h1>AHHH LEGA SEKALII</h1>
+  </div>
+
+  <script>
+    function nextSlide(current) {
+      document.getElementById('slide' + current).classList.remove('visible');
+      document.getElementById('slide' + (current + 1)).classList.add('visible');
+    }
+  </script>
+
+</body>
+</html>
